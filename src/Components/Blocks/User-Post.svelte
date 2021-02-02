@@ -76,8 +76,8 @@
         width: 2rem;
         border: 0.1rem;
         border-radius: 50%;
-        background-color: var(--neon-trees-1);;
-        border-color: var(--neon-trees-1);;
+        background-color: var(--neon-trees-1);
+        border-color: var(--neon-trees-1);
         border-style: solid;
     }
 

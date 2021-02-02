@@ -7,22 +7,34 @@
 <main>
 	<Header />
 	<span class="head-space"></span>
-	<Userpost />
-	<Userpost />
-	<Userpost />
-	<Userpost />
-	<Userpost />
-	<Userpost />
-	<Userpost />
+	<span class="posts">
+		<Userpost />
+		<Userpost />
+		<Userpost />
+		<Userpost />
+		<Userpost />
+		<Userpost />
+		<Userpost />
+	</span>
 	<span class="head-space"></span>
 	<Nav />
 </main>
 
 <style>
 	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+
+	}
+
+	main {
+		display: flex;
+		width: 100%;
+	}
+
+	.posts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 400px;
 	}
 
 	.head-space {
