@@ -8,11 +8,6 @@
 	let posts = [];
 
 	onMount(async () => {
-		const res = await fetch(`http://localhost:5000/api/users.json`);
-		users = await res.json();
-	});
-
-	onMount(async () => {
 		const res = await fetch(`http://localhost:5000/api/posts.json`);
 		posts = await res.json();
 	});
@@ -30,10 +25,12 @@
 		Description={post.desc}
 		Game={post.game}
 		Lang={post.lang}
+		Color={post.color}
+		Gradient={post.gradient}
 		Upvotes={post.upvotes}
 		/>
 	{:else}
-Loading...
+		<span class="loading-container"><img class="loader" src="img/spinner.svg" alt=""></span>
 
 {/each}
 	</span>
@@ -46,6 +43,18 @@ Loading...
 		main {
 			display: flex;
 		}
+	}
+
+	.loading-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.loader {
+		width: 2rem;
+		height: 2rem;
 	}
 
 	main {

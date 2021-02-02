@@ -3,13 +3,14 @@
     export let search = "img/zoom-inactive.svg";
     export let activity = "img/heart-inactive.svg";
     export let cog = "img/cog-inactive.svg";
+    export let media = "img/media-active.svg";
 </script>
 
 <main class="header">
     <div class="header-content">
         <img id="home" src={home} alt="home" class="icon">
         <img src={search} alt="search" class="icon">
-        <span id="upload" class="icon"></span>
+        <span id="upload" class="icon"><img src={media} alt="upload"></span>
         <img src={activity} alt="activity" class="icon">
         <img src={cog} alt="settings" class="icon">
     </div>
@@ -38,6 +39,9 @@
     }
 
     #upload {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 3rem;
         height: 3rem;
         border-radius: 50%;

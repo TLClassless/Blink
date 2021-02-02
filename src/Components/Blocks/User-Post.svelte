@@ -5,6 +5,8 @@
     export let Lang;
     export let Upvotes;
     export let Description;
+    export let Color;
+    export let Gradient;
 
     const Comment = "img/message.svg";
     const Share = "img/forward-inactive.svg";
@@ -15,9 +17,9 @@
 <div class="profile">
     <span class="head">
         <span class="indentity">
-            <img id="profile-picture" src={Profile} alt="profile"/>
+            <img class="{Color}" src={Profile} alt="profile"/>
             <span class="br"></span>
-            <h3 class="username">/{Username}</h3>
+            <h3 class="username {Gradient}">/{Username}</h3>
         </span>
         <span class="information">
             <img class="circ-img" src={Game} alt="game" />
@@ -47,7 +49,7 @@
     </span>
 
     <span class="description">
-        <p class="description-txt"><b><i>{Username}</i></b>{Description}</p>
+        <p class="description-txt"><b><i>{Username}</i></b> {Description}</p>
     </span>
 </div>
 
@@ -57,8 +59,8 @@
         font-family: 'Rubik', sans-serif;
         font-weight: 700;
         font-style: italic;
-        background-color: var(--neon-trees-1);
-        background-image: linear-gradient(45deg, var(--neon-trees-1), var(--neon-trees-2));
+        background-color: var(--sunshine-girl-1);
+        background-image: linear-gradient(45deg, var(--sunshine-girl-1), var(--sunshine-girl-2));
         background-size: 100%;
         background-clip: text;
         -webkit-background-clip: text;
@@ -70,17 +72,6 @@
     .profile {
         display: flex;
         flex-direction: column;
-    }
-
-    #profile-picture {
-        display: flex;
-        height: 2rem;
-        width: 2rem;
-        border: 0.1rem;
-        border-radius: 50%;
-        background-color: var(--neon-trees-1);
-        border-color: var(--neon-trees-1);
-        border-style: solid;
     }
 
     .br {
@@ -184,5 +175,112 @@
 
     .description-txt {
         margin: 0.5rem 0;
+    }
+
+    .neon-trees {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--neon-trees-1);
+        border-color: var(--neon-trees-1);
+        border-style: solid;
+    }
+
+    .neon-trees-grad {
+        background-image: linear-gradient(45deg, var(--neon-trees-1), var(--neon-trees-2));
+    }
+
+
+
+    .sunshine-girl {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--sunshine-girl-1);
+        border-color: var(--sunshine-girl-1);
+        border-style: solid;
+    }
+
+    .sunshine-girl-grad {
+        background-image: linear-gradient(45deg, var(--sunshine-girl-1), var(--sunshine-girl-2));
+    }
+
+    .green-is-the-new-brown {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--green-is-the-new-brown-1);
+        border-color: var(--green-is-the-new-brown-1);
+        border-style: solid;
+    }
+
+    .green-is-the-new-brown-grad {
+        background-image: linear-gradient(45deg, var(--green-is-the-new-brown-1), var(--green-is-the-new-brown-2));
+    }
+
+    .condor-orange {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--condor-orange-1);
+        border-color: var(--condor-orange-1);
+        border-style: solid;
+    }
+
+    .condor-orange-grad {
+        background-image: linear-gradient(45deg, var(--condor-orange-1), var(--condor-orange-2));
+    }
+
+    .oopsie-purple {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--oopsie-purple-1);
+        border-color: var(--oopsie-purple-1);
+        border-style: solid;
+    }
+
+    .oopsie-purple-grad {
+        background-image: linear-gradient(45deg, var(--oopsie-purple-1), var(--oopsie-purple-2));
+    }
+
+    .seventeen-twelve {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--seventeen-twelve-1);
+        border-color: var(--seventeen-twelve-1);
+        border-style: solid;
+    }   
+
+    .seventeen-twelve-grad {
+        background-image: linear-gradient(45deg, var(--seventeen-twelve-1), var(--seventeen-twelve-2));
+    }
+
+    .torn-on-blue {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--torn-on-blue-1);
+        border-color: var(--torn-on-blue-1);
+        border-style: solid;
+    }
+
+    .torn-on-blue-grad {
+        background-image: linear-gradient(45deg, var(--torn-on-blue-1), var(--torn-on-blue-2));
     }
 </style>
