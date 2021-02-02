@@ -1,0 +1,47 @@
+[
+  {
+    "userid": "1",
+    "name": "TLClassless",
+    "pic": "img/placeholder/user.png",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
+    "game": "img/placeholder/game.jpg",
+    "lang": "img/placeholder/lang.png",
+    "upvotes": "50"
+  },
+  {
+    "userid": 2,
+    "name": "Charley",
+    "pic": "img/placeholder/user.png",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
+    "game": "img/placeholder/game.jpg",
+    "lang": "img/placeholder/lang.png",
+    "upvotes": "50"
+  },
+  {
+    "userid": 3,
+    "name": "Thar201",
+    "pic": "img/placeholder/user.png",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
+    "game": "img/placeholder/game.jpg",
+    "lang": "img/placeholder/lang.png",
+    "upvotes": "50"
+  },
+  {
+    "userid": 4,
+    "name": "Condor",
+    "pic": "img/placeholder/user.png",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
+    "game": "img/placeholder/game.jpg",
+    "lang": "img/placeholder/lang.png",
+    "upvotes": "50"
+  },
+  {
+    "userid": 5,
+    "name": "OOAKF",
+    "pic": "img/placeholder/user.png",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
+    "game": "img/placeholder/game.jpg",
+    "lang": "img/placeholder/lang.png",
+    "upvotes": "50"
+  }
+]

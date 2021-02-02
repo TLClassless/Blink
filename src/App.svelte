@@ -8,7 +8,12 @@
 	let posts = [];
 
 	onMount(async () => {
-		const res = await fetch(`http://localhost:5000/api/experiments.json`);
+		const res = await fetch(`http://localhost:5000/api/users.json`);
+		users = await res.json();
+	});
+
+	onMount(async () => {
+		const res = await fetch(`http://localhost:5000/api/posts.json`);
 		posts = await res.json();
 	});
 </script>
@@ -22,6 +27,7 @@
 		<Userpost
 		Profile={post.pic} 
 		Username={post.name}
+		Description={post.desc}
 		Game={post.game}
 		Lang={post.lang}
 		Upvotes={post.upvotes}

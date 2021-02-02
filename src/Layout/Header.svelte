@@ -35,9 +35,9 @@
     .profile {
         border-radius: 50%;
         height: 1.8rem;
-        border: 0.2rem;
-        background-color: #0E111A;
-        border-color: #0E111A;
+        border: 0.1rem;
+        background-color: var(--neon-trees-1);
+        border-color: var(--neon-trees-1);
         border-style: solid;
     }
 </style>

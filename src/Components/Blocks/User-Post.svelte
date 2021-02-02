@@ -4,6 +4,7 @@
     export let Game;
     export let Lang;
     export let Upvotes;
+    export let Description;
 
     const Comment = "img/message.svg";
     const Share = "img/forward-inactive.svg";
@@ -46,7 +47,7 @@
     </span>
 
     <span class="description">
-        <p class="description-txt"><b><i>{Username}</i></b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="description-txt"><b><i>{Username}</i></b>{Description}</p>
     </span>
 </div>
 
@@ -172,14 +173,16 @@
     }
 
     .description {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 3rem;
         padding: 0 1.6rem;
+        margin-bottom: 2rem;
     }
 
     .description-txt {
         margin: 0.5rem 0;
-        max-height: 2.4rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin-bottom: 2rem;
     }
 </style>

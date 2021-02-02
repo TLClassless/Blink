@@ -1,5 +1,5 @@
 <script>
-    export let home = "img/home-inactive.svg";
+    export let home = "img/home-active.svg";
     export let search = "img/zoom-inactive.svg";
     export let activity = "img/heart-inactive.svg";
     export let cog = "img/cog-inactive.svg";
@@ -41,7 +41,7 @@
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: var(--neon-trees-1);
     }
 
     #home {
