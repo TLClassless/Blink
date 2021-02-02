@@ -1,12 +1,12 @@
 <script>
     let icon = "img/blink-ico.svg";
-    let messages = "img/messages.svg";
+    let settings = "img/cog-inactive.svg";
 </script>
 
 <main class="header">
     <div class="header-content">
         <img src={icon} alt="icon" class="icon">
-        <img src={messages} alt="messages" class="messages">
+        <img src={settings} alt="messages" class="messages">
     </div>
 </main>
 
@@ -14,9 +14,10 @@
     .header {
         display: block;
         margin: 0 auto;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
+        background-color: #151926;
     }
 
     .header-content {
@@ -24,14 +25,14 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 0.5rem 1.5rem;
     }
 
     .messages {
-        height: 3rem;
+        height: 2rem;
     }
 
     .icon {
-        height: 2rem;
+        height: 1.5rem;
     }
 </style>
