@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600;1,700&display=swap");
+
+:root {
+  --neon-trees-1: #d80027;
+  --neon-trees-2: #ad00d8;
+
+  --sunshine-girl-1: #f0bb00;
+  --sunshine-girl-2: #f07300;
+
+  --condor-orange-1: #ff3e01;
+  --condor-orange-2: #ff8301;
+
+  --oopsie-purple-1: #af01d1;
+  --oopsie-purple-2: #7301fe;
+
+  --green-is-the-new-brown-1: #01fe1a;
+  --green-is-the-new-brown-2: #0c8f04;
+
+  --seventeen-twelve-1: #ecfc01;
+  --seventeen-twelve-2: #ffba01;
+
+  --torn-on-blue-1: #057993;
+  --torn-on-blue-2: #0175fe;
+}
+
 html,
 body {
   position: relative;

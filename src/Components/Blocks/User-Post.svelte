@@ -51,6 +51,16 @@
 <style>
     .username {
         text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        background-color: var(--sunshine-girl-1);
+        background-image: linear-gradient(45deg, var(--neon-trees-1), var(--neon-trees-2));
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
     }
 
     .profile {
