@@ -1,13 +1,14 @@
 <script>
-    let Profile = "img/placeholder/user.png";
-    let Username = "TLClassless";
-    let Game = "img/placeholder/game.jpg";
-    let Lang = "img/placeholder/lang.png";
-    let Upvotes = 50;
+    export let Profile;
+    export let Username;
+    export let Game;
+    export let Lang;
+    export let Upvotes;
 
-    let Comment = "img/message.svg";
-    let Share = "img/forward-inactive.svg";
-    let Warning = "img/warning-inactive.svg";
+    const Comment = "img/message.svg";
+    const Share = "img/forward-inactive.svg";
+    const Warning = "img/warning-inactive.svg";
+
 </script>
 
 <div class="profile">

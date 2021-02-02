@@ -37,11 +37,6 @@
         height: 2rem;
     }
 
-    #profile {
-        border-radius: 50%;
-        height: 1.8rem;
-    }
-
     #upload {
         width: 3rem;
         height: 3rem;

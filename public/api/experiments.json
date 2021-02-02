@@ -1,0 +1,18 @@
+[
+  {
+    "userid": 1,
+    "name": "TLClassless",
+    "pic": "img/placeholder/user.png",
+    "game": "img/placeholder/game.jpg",
+    "lang": "img/placeholder/lang.png",
+    "upvotes": "50"
+  },
+  {
+    "userid": 2,
+    "name": "Charley",
+    "pic": "img/placeholder/user.png",
+    "game": "img/placeholder/game.jpg",
+    "lang": "img/placeholder/lang.png",
+    "upvotes": "50"
+  }
+]
