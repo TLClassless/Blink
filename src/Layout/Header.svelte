@@ -1,12 +1,12 @@
 <script>
     let icon = "img/blink-ico.svg";
-    let settings = "img/cog-inactive.svg";
+    let profile = "img/placeholder/user.png";
 </script>
 
 <main class="header">
     <div class="header-content">
         <img src={icon} alt="icon" class="icon">
-        <img src={settings} alt="messages" class="messages">
+        <img src={profile} alt="messages" class="profile">
     </div>
 </main>
 
@@ -28,11 +28,16 @@
         padding: 0.5rem 1.5rem;
     }
 
-    .messages {
-        height: 2rem;
-    }
-
     .icon {
         height: 1.5rem;
+    }
+
+    .profile {
+        border-radius: 50%;
+        height: 1.8rem;
+        border: 0.2rem;
+        background-color: #0E111A;
+        border-color: #0E111A;
+        border-style: solid;
     }
 </style>

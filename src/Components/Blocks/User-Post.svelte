@@ -89,7 +89,7 @@
         border-radius: 50%;
         height: 2rem;
         width: 2rem;
-        border: 2pt;
+        border: 0.2rem;
         background-color: #0E111A;
         border-color: #0E111A;
         border-style: solid;

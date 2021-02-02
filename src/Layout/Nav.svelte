@@ -2,7 +2,7 @@
     export let home = "img/home-inactive.svg";
     export let search = "img/zoom-inactive.svg";
     export let activity = "img/heart-inactive.svg";
-    let profile = "img/placeholder/user.png";
+    export let cog = "img/cog-inactive.svg";
 </script>
 
 <main class="header">
@@ -11,7 +11,7 @@
         <img src={search} alt="search" class="icon">
         <span id="upload" class="icon"></span>
         <img src={activity} alt="activity" class="icon">
-        <img id="profile" src={profile} alt="profile" class="icon">
+        <img src={cog} alt="settings" class="icon">
     </div>
 </main>
 
