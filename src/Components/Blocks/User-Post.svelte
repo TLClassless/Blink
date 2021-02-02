@@ -13,7 +13,8 @@
 <div class="profile">
     <span class="head">
         <span class="indentity">
-            <img id="profile-picture" class="circ-img" src={Profile} alt="profile"/>
+            <img id="profile-picture" src={Profile} alt="profile"/>
+            <span class="br"></span>
             <h3 class="username">/{Username}</h3>
         </span>
         <span class="information">
@@ -54,9 +55,10 @@
         font-family: 'Rubik', sans-serif;
         font-weight: 700;
         font-style: italic;
-        background-color: var(--sunshine-girl-1);
+        background-color: var(--neon-trees-1);
         background-image: linear-gradient(45deg, var(--neon-trees-1), var(--neon-trees-2));
         background-size: 100%;
+        background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -69,7 +71,14 @@
     }
 
     #profile-picture {
-        margin-right: 0.5rem;
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem;
+        border-radius: 50%;
+        background-color: var(--neon-trees-1);;
+        border-color: var(--neon-trees-1);;
+        border-style: solid;
     }
 
     .br {
