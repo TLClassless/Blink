@@ -16,7 +16,6 @@
 <main>
 
 	<Header />
-	<span class="head-space"></span>
 	<span class="posts">
 	{#each posts as post}
 		<Userpost
@@ -34,7 +33,6 @@
 
 {/each}
 	</span>
-	<span class="head-space"></span>
 	<Nav />
 </main>
 
@@ -42,6 +40,7 @@
 	@media (min-width: 640px) {
 		main {
 			display: flex;
+			justify-content: center;
 		}
 	}
 
@@ -64,13 +63,8 @@
 	.posts {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		max-width: 400px;
-	}
-
-	.head-space {
-		display: block;
-		height: 3.5rem;
-		width: 100%;
+		margin-top: 3.5rem;
+		margin-bottom: 3.5rem;
 	}
 </style>
