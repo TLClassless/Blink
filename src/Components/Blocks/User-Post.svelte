@@ -7,6 +7,7 @@
     export let Description;
     export let Color;
     export let Gradient;
+    export let Video;
 
     const Comment = "img/message.svg";
     const Share = "img/forward-inactive.svg";
@@ -32,7 +33,11 @@
     </span>
 
     <span class="player-cont">
-        <img class="player" src="img/placeholder/gameplay.jpg" alt="gameplay-placeholder">
+        <video width="100%" height="100%" controls>
+            <track kind="captions">
+            <source src="video/{Video}.mp4" type="video/mp4">
+          </video> 
+        
     </span>
 
     <span class="interaction">

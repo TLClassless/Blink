@@ -28,11 +28,11 @@
     "upvotes": "50"
   },
   {
-    "userid": 3,
-    "name": "Thar201",
+    "userid": "1",
+    "name": "TLClassless",
     "pic": "img/placeholder/user.png",
-    "color": "green-is-the-new-brown",
-    "gradient": "green-is-the-new-brown-grad",
+    "color": "neon-trees",
+    "gradient": "neon-trees-grad",
 
     "postid": "3",
     "videoid": "vid3",
@@ -42,11 +42,11 @@
     "upvotes": "50"
   },
   {
-    "userid": 4,
-    "name": "Condor",
+    "userid": "1",
+    "name": "TLClassless",
     "pic": "img/placeholder/user.png",
-    "color": "condor-orange",
-    "gradient": "condor-orange-grad",
+    "color": "neon-trees",
+    "gradient": "neon-trees-grad",
 
     "postid": "4",
     "videoid": "vid4",
@@ -57,7 +57,7 @@
   },
   {
     "userid": 5,
-    "name": "Woopsicles",
+    "name": "OOAKF",
     "pic": "img/placeholder/user.png",
     "color": "oopsie-purple",
     "gradient": "oopsie-purple-grad",
