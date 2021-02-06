@@ -3,55 +3,70 @@
     "userid": "1",
     "name": "TLClassless",
     "pic": "img/placeholder/user.png",
+    "color": "neon-trees",
+    "gradient": "neon-trees-grad",
+
+    "postid": "1",
+    "videoid": "vid1",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
     "game": "img/placeholder/game.jpg",
     "lang": "img/placeholder/lang.png",
-    "color": "neon-trees",
-    "gradient": "neon-trees-grad",
     "upvotes": "50"
   },
   {
     "userid": 2,
     "name": "Charley",
     "pic": "img/placeholder/user.png",
+    "color": "sunshine-girl",
+    "gradient": "sunshine-girl-grad",
+
+    "postid": "2",
+    "videoid": "vid2",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
     "game": "img/placeholder/game.jpg",
     "lang": "img/placeholder/lang.png",
-    "color": "sunshine-girl",
-    "gradient": "sunshine-girl-grad",
     "upvotes": "50"
   },
   {
     "userid": 3,
     "name": "Thar201",
     "pic": "img/placeholder/user.png",
+    "color": "green-is-the-new-brown",
+    "gradient": "green-is-the-new-brown-grad",
+
+    "postid": "3",
+    "videoid": "vid3",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
     "game": "img/placeholder/game.jpg",
     "lang": "img/placeholder/lang.png",
-    "color": "green-is-the-new-brown",
-    "gradient": "green-is-the-new-brown-grad",
     "upvotes": "50"
   },
   {
     "userid": 4,
     "name": "Condor",
     "pic": "img/placeholder/user.png",
+    "color": "condor-orange",
+    "gradient": "condor-orange-grad",
+
+    "postid": "4",
+    "videoid": "vid4",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
     "game": "img/placeholder/game.jpg",
     "lang": "img/placeholder/lang.png",
-    "color": "condor-orange",
-    "gradient": "condor-orange-grad",
     "upvotes": "50"
   },
   {
     "userid": 5,
     "name": "Woopsicles",
     "pic": "img/placeholder/user.png",
+    "color": "oopsie-purple",
+    "gradient": "oopsie-purple-grad",
+
+    "postid": "5",
+    "videoid": "vid5",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
     "game": "img/placeholder/game.jpg",
     "lang": "img/placeholder/lang.png",
-    "color": "oopsie-purple",
-    "gradient": "oopsie-purple-grad",
     "upvotes": "50"
   }
 ]
