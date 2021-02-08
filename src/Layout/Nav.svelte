@@ -1,9 +1,9 @@
 <script>
-    export let home = "img/home-active.svg";
-    export let search = "img/zoom-inactive.svg";
-    export let activity = "img/heart-inactive.svg";
-    export let cog = "img/cog-inactive.svg";
-    export let media = "img/media-active.svg";
+    export let home = "img/icons/home-active.svg";
+    export let search = "img/icons/zoom-inactive.svg";
+    export let activity = "img/icons/heart-inactive.svg";
+    export let cog = "img/icons/cog-inactive.svg";
+    export let media = "img/icons/media-active.svg";
 </script>
 
 <main class="header">

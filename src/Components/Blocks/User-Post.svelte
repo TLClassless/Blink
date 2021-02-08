@@ -1,5 +1,4 @@
 <script>
-    export let Profile;
     export let Username;
     export let Game;
     export let Lang;
@@ -9,35 +8,35 @@
     export let Gradient;
     export let Video;
 
-    const Comment = "img/message.svg";
-    const Share = "img/forward-inactive.svg";
-    const Warning = "img/warning-inactive.svg";
+    const Comment = "img/icons/message.svg";
+    const Share = "img/icons/forward-inactive.svg";
+    const Warning = "img/icons/warning-inactive.svg";
 
 </script>
 
 <div class="profile">
     <span class="head">
         <span class="indentity">
-            <img class="{Color}" src={Profile} alt="profile"/>
+            <img class="{Color}" src="img/users/{Username}.jpg" alt="profile"/>
             <span class="br"></span>
             <h3 class="username {Gradient}">/{Username}</h3>
         </span>
         <span class="information">
-            <img class="circ-img" src={Game} alt="game" />
+            <img class="circ-img" src="img/games/{Game}.png" alt="game" />
             <span class="br"></span>
             <span class="circ-img">
-                <img class="crop-to-fill" src={Lang} alt="lang" />
+                <img class="crop-to-fill" src="img/languages/{Lang}.svg" alt="lang" />
             </span>
         </span>
 
     </span>
 
     <span class="player-cont">
-        <video width="100%" height="100%" controls>
-            <track kind="captions">
-            <source src="video/{Video}.mp4" type="video/mp4">
-          </video> 
-        
+        <!-- svelte-ignore a11y-media-has-caption -->
+        <video controls
+        src="video/{Video}.mp4"
+        width="100%" height="100%">
+        </video>
     </span>
 
     <span class="interaction">
@@ -125,7 +124,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 11.5rem;
+        height: 12.5rem;
         object-fit: fill;
         margin: 0.8rem 0;
     }

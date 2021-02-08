@@ -9,8 +9,8 @@
     "postid": "1",
     "videoid": "vid1",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
-    "game": "img/placeholder/game.jpg",
-    "lang": "img/placeholder/lang.png",
+    "game": "phasmophobia",
+    "lang": "gb",
     "upvotes": "50"
   },
   {
@@ -23,8 +23,8 @@
     "postid": "2",
     "videoid": "vid2",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
-    "game": "img/placeholder/game.jpg",
-    "lang": "img/placeholder/lang.png",
+    "game": "minecraft",
+    "lang": "it",
     "upvotes": "50"
   },
   {
@@ -37,8 +37,8 @@
     "postid": "3",
     "videoid": "vid3",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
-    "game": "img/placeholder/game.jpg",
-    "lang": "img/placeholder/lang.png",
+    "game": "phasmophobia",
+    "lang": "gb",
     "upvotes": "50"
   },
   {
@@ -51,8 +51,8 @@
     "postid": "4",
     "videoid": "vid4",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
-    "game": "img/placeholder/game.jpg",
-    "lang": "img/placeholder/lang.png",
+    "game": "minecraft",
+    "lang": "de",
     "upvotes": "50"
   },
   {
@@ -65,8 +65,8 @@
     "postid": "5",
     "videoid": "vid5",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque risus lectus, vitae malesuada ante scelerisque eget.",
-    "game": "img/placeholder/game.jpg",
-    "lang": "img/placeholder/lang.png",
+    "game": "overwatch",
+    "lang": "es",
     "upvotes": "50"
   }
 ]

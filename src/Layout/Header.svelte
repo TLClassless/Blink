@@ -1,12 +1,12 @@
 <script>
-    let icon = "img/blink-ico.svg";
-    let profile = "img/placeholder/user.png";
+    let usericon = "img/users/TLClassless.jpg";
+    let icon = "img/icons/blink-ico.svg";
 </script>
 
 <main class="header">
     <div class="header-content">
         <img src={icon} alt="icon" class="icon">
-        <img src={profile} alt="messages" class="profile">
+        <img src={usericon} alt="user" class="profile">
     </div>
 </main>
 

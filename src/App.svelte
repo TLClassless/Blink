@@ -30,7 +30,7 @@
 		Video={post.videoid}
 		/>
 	{:else}
-		<span class="loading-container"><img class="loader" src="img/spinner.svg" alt=""></span>
+		<span class="loading-container"><img class="loader" src="img/icons/spinner.svg" alt=""></span>
 
 {/each}
 	</span>
