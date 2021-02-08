@@ -2,7 +2,6 @@
   {
     "userid": "1",
     "name": "TLClassless",
-    "pic": "img/placeholder/user.png",
     "color": "neon-trees",
     "gradient": "neon-trees-grad",
 
@@ -16,7 +15,6 @@
   {
     "userid": 2,
     "name": "Charley",
-    "pic": "img/placeholder/user.png",
     "color": "sunshine-girl",
     "gradient": "sunshine-girl-grad",
 
@@ -30,7 +28,6 @@
   {
     "userid": "1",
     "name": "TLClassless",
-    "pic": "img/placeholder/user.png",
     "color": "neon-trees",
     "gradient": "neon-trees-grad",
 
@@ -44,7 +41,6 @@
   {
     "userid": "1",
     "name": "TLClassless",
-    "pic": "img/placeholder/user.png",
     "color": "neon-trees",
     "gradient": "neon-trees-grad",
 
@@ -58,7 +54,6 @@
   {
     "userid": 5,
     "name": "OOAKF",
-    "pic": "img/placeholder/user.png",
     "color": "oopsie-purple",
     "gradient": "oopsie-purple-grad",
 
