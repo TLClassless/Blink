@@ -1,12 +1,19 @@
 <script>
     let usericon = "img/users/TLClassless.jpg";
+    let login = "img/icons/user-placeholders.svg";
     let icon = "img/icons/blink-ico.svg";
+
+    import {userstate} from '../js/store.js';
 </script>
 
 <main class="header">
     <div class="header-content">
         <img src={icon} alt="icon" class="icon">
+        {#if $userstate == true}
         <img src={usericon} alt="user" class="profile">
+        {:else}
+        <img src={login} alt="user" id="login" class="profile">
+        {/if}
     </div>
 </main>
 
@@ -39,5 +46,10 @@
         background-color: var(--neon-trees-1);
         border-color: var(--neon-trees-1);
         border-style: solid;
+    }
+    
+    #login {
+        background-color: #151926;
+        border-color: #fff;
     }
 </style>
