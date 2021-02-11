@@ -5,9 +5,9 @@
 <div class="dropdown">
     <button class="dropbtn" on:click={() => clicked = !clicked} />
     <div class="dropdown-content" class:clicked={clicked} on:click={() => clicked = !clicked}>
-        <a href="/">Link</a>
-        <a href="/">Link</a>
-        <a href="/">Link</a>
+        <a href="/">View Profile</a>
+        <a href="/">Settings</a>
+        <a id="logout" href="/">Log Out</a>
     </div>
 </div>
 
@@ -41,6 +41,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: 0;
     }
 
     /* Links inside the dropdown */
@@ -56,4 +57,8 @@
 
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
     .clicked {display:block;} 
+
+    #logout {
+        color: #FF0000;
+    }
 </style>
