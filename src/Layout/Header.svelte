@@ -4,6 +4,7 @@
     let icon = "img/icons/blink-ico.svg";
 
     import {userstate} from '../js/store.js';
+    import Dropdown from "../Components/Function/Dropdown-Menu.svelte"
 </script>
 
 <main class="header">
@@ -12,7 +13,8 @@
         {#if $userstate == true}
         <img src={usericon} alt="user" class="profile">
         {:else}
-        <img src={login} alt="user" id="login" class="profile">
+        <!-- <img src={login} alt="user" id="login" class="profile"> -->
+        <Dropdown></Dropdown>
         {/if}
     </div>
 </main>
@@ -47,9 +49,9 @@
         border-color: var(--neon-trees-1);
         border-style: solid;
     }
-    
+/*     
     #login {
         background-color: #151926;
         border-color: #fff;
-    }
+    } */
 </style>
