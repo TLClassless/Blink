@@ -1,9 +1,10 @@
 <script>
     let clicked = false;
+    export let profilePicture;
 </script>
 
 <div class="dropdown">
-    <button class="dropbtn" on:click={() => clicked = !clicked} />
+    <img src={profilePicture} alt="profilePic" class="dropbtn" on:click={() => clicked = !clicked} />
     <div class="dropdown-content" class:clicked={clicked} on:click={() => clicked = !clicked}>
         <a href="/">View Profile</a>
         <a href="/">Settings</a>
@@ -14,12 +15,13 @@
 <style>
     /* Dropdown Button */
     .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+        border-radius: 50%;
+        height: 1.8rem;
+        border: 0.1rem;
+        background-color: var(--neon-trees-1);
+        border-color: var(--neon-trees-1);
+        border-style: solid;
+        cursor: pointer;
     }
 
     /* Dropdown button on hover & focus */

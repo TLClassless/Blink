@@ -1,5 +1,5 @@
 <script>
-    let usericon = "img/users/TLClassless.jpg";
+    export let userIcon;
     let login = "img/icons/user-placeholders.svg";
     let icon = "img/icons/blink-ico.svg";
 
@@ -11,10 +11,14 @@
     <div class="header-content">
         <img src={icon} alt="icon" class="icon">
         {#if $userstate == true}
-        <img src={usericon} alt="user" class="profile">
+        <Dropdown 
+            profilePicture = {userIcon}
+        />
         {:else}
         <!-- <img src={login} alt="user" id="login" class="profile"> -->
-        <Dropdown></Dropdown>
+        <Dropdown 
+            profilePicture = {login}
+        />
         {/if}
     </div>
 </main>
@@ -40,18 +44,4 @@
     .icon {
         height: 1.5rem;
     }
-
-    .profile {
-        border-radius: 50%;
-        height: 1.8rem;
-        border: 0.1rem;
-        background-color: var(--neon-trees-1);
-        border-color: var(--neon-trees-1);
-        border-style: solid;
-    }
-/*     
-    #login {
-        background-color: #151926;
-        border-color: #fff;
-    } */
 </style>

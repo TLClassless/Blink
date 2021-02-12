@@ -19,7 +19,9 @@
 </script>
 
 <main>
-	<Header />
+	<Header 
+		userIcon="img/users/TLClassless.jpg"
+	/>
 	{console.log(userstate)}
 	{#if $userstate == true}
 	<span class="posts">
@@ -43,9 +45,6 @@
 	{:else}
 		<span class="loading-container"><img class="loader" src="img/icons/spinner.svg" alt=""></span>
 	{/if}
-
-	
-	
 </main>
 
 <style>
