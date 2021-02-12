@@ -4,18 +4,17 @@
     let icon = "img/icons/blink-ico.svg";
 
     import {userstate} from '../js/store.js';
-    import Dropdown from "../Components/Function/Dropdown-Menu.svelte"
+    import Dropdown from "../Components/Function/Dropdown-Menu.svelte";
 </script>
 
 <main class="header">
     <div class="header-content">
-        <img src={icon} alt="icon" class="icon">
+        <a href="/"><img src={icon} alt="icon" class="icon" /></a>
         {#if $userstate == true}
         <Dropdown 
             profilePicture = {userIcon}
         />
         {:else}
-        <!-- <img src={login} alt="user" id="login" class="profile"> -->
         <Dropdown 
             profilePicture = {login}
         />
