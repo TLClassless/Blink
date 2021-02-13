@@ -1,11 +1,18 @@
 <script>
     import {auth, provider} from '../js/firebase';
 
+    let emailInput;
+    let passwordInput;
+
+
+
     function loginWithGoogle(){
         auth.signInWithRedirect(provider);
     };
 
     function loginWithEmail(){
+        let email = emailInput.value;
+        let password = passwordInput.value;
         auth.signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
             //signed in
@@ -21,11 +28,11 @@
 <main>
 	<span class="login">
         <label for="uname"><b>Email</b></label>
-        <input type="text" placeholder="enter@youremail.here" name="uname" required>
+        <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="uname" required>
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="*************" name="psw" required>
-        <button class="btn">
+        <input bind:this={passwordInput} type="password" placeholder="*************" name="psw" required>
+        <button class="btn" on:click={loginWithEmail}>
             Sign in
         </button>
         <p>Alternatively</p>
@@ -48,6 +55,7 @@
         align-items: center;
         justify-content: center;
         width: 16rem;
+        cursor: pointer;
     }
 
     input {
