@@ -2,13 +2,13 @@
 	import Header from "./Layout/Header.svelte";
 	import Nav from "./Layout/Nav.svelte";
 	import Userpost from "./Components/Blocks/User-Post.svelte";
-	import Login from "./Components/Login.svelte";
+	import Login from "./Components/Function/Login.svelte";
 	
 	// API fetch
 	import { onMount } from 'svelte'; 
 	let posts = [];
 	onMount(async () => {
-		const res = await fetch(`http://localhost:5000/api/posts.json`);
+		const res = await fetch(`api/posts.json`);
 		posts = await res.json();
 	});
 
@@ -39,6 +39,7 @@
 		/>
 	{/each}
 </span>
+	<span class="navbar"></span>
 	<Nav />
 	{:else if $userstate == false}
 	<Login></Login>
@@ -77,5 +78,12 @@
 		max-width: 400px;
 		margin-top: 3.5rem;
 		margin-bottom: 3.5rem;
+	}
+
+	.navbar {
+		display: block;
+		position:absolute;
+		height: 3.5rem;
+		bottom: 0;
 	}
 </style>

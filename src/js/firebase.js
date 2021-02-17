@@ -4,6 +4,7 @@ import "firebase/analytics";
 import "firebase/performance";
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/storage";
 
 // app's Firebase configuration
 export const firebaseConfig = {
@@ -24,3 +25,4 @@ export const performance = firebase.performance();
 export const auth = firebase.auth();
 export const db = firebase.firestore();
 export const provider = new firebase.auth.GoogleAuthProvider();
+export const storage = firebase.storage();

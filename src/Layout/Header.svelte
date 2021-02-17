@@ -15,9 +15,7 @@
             profilePicture = {userIcon}
         />
         {:else}
-        <Dropdown 
-            profilePicture = {login}
-        />
+        <img src={login} alt="user" class="user"/>
         {/if}
     </div>
 </main>
@@ -42,5 +40,14 @@
 
     .icon {
         height: 1.5rem;
+    }
+
+    .user {
+        border-radius: 50%;
+        height: 1.8rem;
+        border: 0.1rem;
+        background-color: #151926;
+        border-color: #fff;
+        border-style: solid;
     }
 </style>

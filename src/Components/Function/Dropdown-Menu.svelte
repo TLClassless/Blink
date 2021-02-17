@@ -2,12 +2,16 @@
     let clicked = false;
     export let profilePicture;
     import { auth } from "../../js/firebase.js"
+    import { newAccountApi } from '../../js/api.js';
+    import { videoUpload } from '../../js/upload.js';
 
     const logout = () => {
         auth.signOut().then(() => {
             console.log('See Ya Next Time!')
         })
     }
+
+
 </script>
 
 <div class="dropdown">
@@ -15,6 +19,8 @@
     <div class="dropdown-content" class:clicked={clicked} on:click={() => clicked = !clicked}>
         <a href="/">View Profile</a>
         <a href="/">Settings</a>
+        <p id="hello" on:click={newAccountApi}>API Test</p>
+        <p id="upload" on:click={videoUpload}>Test Upload</p>
         <p id="logout" on:click={logout}>Log Out</p>
     </div>
 </div>

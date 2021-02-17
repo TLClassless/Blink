@@ -4,7 +4,23 @@
     export let activity = "img/icons/heart-inactive.svg";
     export let cog = "img/icons/cog-inactive.svg";
     export let media = "img/icons/media-active.svg";
+
+    import {apiUrl} from "../js/api.js";
+
+    let files;
 </script>
+
+<!-- <section class="upload">
+    <form action="{apiUrl}">
+        <input type="file" bind:files>
+        <input type="submit" value="Submit">
+    </form>
+    {#if files && files[0]}
+	<p>
+		{files[0].name}
+	</p>
+{/if}
+</section> -->
 
 <main class="header">
     <div class="header-content">
@@ -17,6 +33,18 @@
 </main>
 
 <style>
+    /* upload */
+    /* .upload {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        align-content: center;
+        justify-content: center;
+        background-color: #151926;
+    } */
+    /* upload */
+
     .header {
         display: block;
         margin: 0 auto;

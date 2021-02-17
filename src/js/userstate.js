@@ -14,7 +14,6 @@ auth.onAuthStateChanged((user) => {
     };
     userprofile.set(profile);
     localStorage.setItem("Profile", JSON.stringify(profile));
-    getLocation();
 
     console.log("Logged In");
   } else {
