@@ -3,6 +3,7 @@
 
     let emailInput;
     let passwordInput;
+    let clicked = true;
 
     function loginWithGoogle(){
         auth.signInWithRedirect(provider);
@@ -25,7 +26,7 @@
 
 <main>
     <!-- login -->
-	<!-- <span class="login">
+	<span class="login">
 
         <label for="email"><b>Email</b></label>
         <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="email" required>
@@ -33,24 +34,25 @@
         <label for="psw"><b>Password</b></label>
         <input bind:this={passwordInput} type="password" placeholder="*************" name="psw" required>
         
+        <span class="sign-up-space"></span>
+        
         <button class="btn" on:click={loginWithEmail}>
             Sign in
         </button>
         
         <p>Alternatively</p>
 
+        <button class="btn" on:click={() => clicked = !clicked}>
+            Sign Up with Email & Password
+        </button>
+
         <button class="btn" on:click={loginWithGoogle}>
             <img class="btn-ico" src="img/icons/google-icon.svg" alt="Sign in with Google"> Sign in with Google
         </button>
-
-        <span class="sign-up-space"></span>
-        <button class="btn">
-            Sign Up with Email & Password
-        </button>
-	</span> -->
+	</span>
 
     <!-- signup -->
-    <div class="login"> 
+    <div class="login signup" class:clicked={clicked}> 
         <label for="email"><b>Email</b></label>
         <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="email" required>
 
@@ -61,15 +63,17 @@
         <input bind:this={emailInput} type="text" placeholder="sick_username" name="uname" required>
 
         <span class="sign-up-space"></span>
+
         <button class="btn" on:click={loginWithEmail}>
             Sign Up
         </button>
+
         <p>Alternatively</p>
+        <button class="btn" on:click={() => clicked = !clicked}>
+            Sign In with Email & Password
+        </button>
         <button class="btn" on:click={loginWithGoogle}>
             <img class="btn-ico" src="img/icons/google-icon.svg" alt="Sign in with Google"> Sign in with Google
-        </button>
-        <button class="btn">
-            Sign In with Email & Password
         </button>
     </div>
 </main>
@@ -79,6 +83,7 @@
     .sign-up-space {
         height: 1rem;
     }
+
     .btn {
         display: flex;
         background-color: #fff;
@@ -111,5 +116,9 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+    }
+
+    .clicked {
+        display: none;
     }
 </style>
