@@ -1,9 +1,10 @@
 <script>
     import { auth, provider } from '../../js/firebase.js';
 
+    let clicked = true;
+
     let emailInput;
     let passwordInput;
-    let clicked = true;
 
     function loginWithGoogle(){
         auth.signInWithRedirect(provider);
@@ -12,33 +13,54 @@
     function loginWithEmail(){
         let email = emailInput.value;
         let password = passwordInput.value;
+        console.log(email, password);
         auth.signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
             //signed in
             var user = userCredential.user;
+            console.log(user);
         })
         .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
+            console.log(errorCode + " " + errorMessage);
         })
     }
+
+    let signupEmailInput;
+    let signupPasswordInput;
+    let signupUsernameInput;
+
+    function signUpWithEmail(){
+        let SUemail = signupEmailInput.value;
+        let SUpassword = signupPasswordInput.value;
+        auth.createUserWithEmailAndPassword(SUemail, SUpassword)
+        .then((userCredential) => {
+            //signed in
+            var user = userCredential.user;
+            console.log(user);
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode, errorMessage);
+        })
+    }
+
 </script>
 
 <main>
     <!-- login -->
-	<span class="login" class:clicked={!clicked}>
-
-        <label for="email"><b>Email</b></label>
-        <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="email" required>
+	<div class="login" class:clicked={!clicked}>
+        <label for="uname"><b>Email</b></label>
+        <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="uname" required>
 
         <label for="psw"><b>Password</b></label>
         <input bind:this={passwordInput} type="password" placeholder="*************" name="psw" required>
         
         <span class="sign-up-space"></span>
         
-        <button class="btn" on:click={loginWithEmail}>
-            Sign in
-        </button>
+        <input type="submit" value="Sign In" class="btn" on:click={loginWithEmail}>
         
         <p>Alternatively</p>
 
@@ -49,32 +71,32 @@
         <button class="btn" on:click={loginWithGoogle}>
             <img class="btn-ico" src="img/icons/google-icon.svg" alt="Sign in with Google"> Sign in with Google
         </button>
-	</span>
+	</div>
 
     <!-- signup -->
     <div class="login" class:clicked={clicked}> 
-        <label for="email"><b>Email</b></label>
-        <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="email" required>
+        <form>
+            <label for="email"><b>Email</b></label>
+            <input bind:this={signupEmailInput} type="text" placeholder="enter@youremail.here" name="emailsignup" required>
 
-        <label for="psw"><b>Create Password</b></label>
-        <input bind:this={passwordInput} type="password" placeholder="*************" name="psw" required>
-        
-        <label for="uname"><b>Create Username</b></label>
-        <input bind:this={emailInput} type="text" placeholder="sick_username" name="uname" required>
+            <label for="psw"><b>Create Password</b></label>
+            <input bind:this={signupPasswordInput} type="password" placeholder="*************" name="pswsignup" required>
+            
+            <label for="uname"><b>Create Username</b></label>
+            <input bind:this={signupUsernameInput} type="text" placeholder="sick_username" name="unamesignup" required>
 
-        <span class="sign-up-space"></span>
+            <span class="sign-up-space"></span>
 
-        <button class="btn" on:click={loginWithEmail}>
-            Sign Up
-        </button>
+            <input type="submit" value="Sign Up" class="btn" on:click={signUpWithEmail}>
 
-        <p>Alternatively</p>
-        <button class="btn" on:click={() => clicked = !clicked}>
-            Sign In with Email & Password
-        </button>
-        <button class="btn" on:click={loginWithGoogle}>
-            <img class="btn-ico" src="img/icons/google-icon.svg" alt="Sign in with Google"> Sign in with Google
-        </button>
+            <p>Alternatively</p>
+            <button class="btn" on:click={() => clicked = !clicked}>
+                Sign In with Email & Password
+            </button>
+            <button class="btn" on:click={loginWithGoogle}>
+                <img class="btn-ico" src="img/icons/google-icon.svg" alt="Sign in with Google"> Sign in with Google
+            </button>
+        </form>
     </div>
 </main>
 
@@ -121,10 +143,4 @@
     .clicked {
         display: none;
     }
-/* 
-    .signup {
-        position: fixed;
-        background-color: #151926;
-        bottom: 0;
-    } */
 </style>
