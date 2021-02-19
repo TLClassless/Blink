@@ -18,12 +18,11 @@
         .then((userCredential) => {
             //signed in
             var user = userCredential.user;
-            console.log(user);
         })
         .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            console.log(errorCode + " " + errorMessage);
+            var loginerrorCode = error.code;
+            var loginerrorMessage = error.message;
+            alert(loginerrorMessage);
         })
     }
 
@@ -75,7 +74,6 @@
 
     <!-- signup -->
     <div class="login" class:clicked={clicked}> 
-        <form>
             <label for="email"><b>Email</b></label>
             <input bind:this={signupEmailInput} type="text" placeholder="enter@youremail.here" name="emailsignup" required>
 
@@ -83,7 +81,7 @@
             <input bind:this={signupPasswordInput} type="password" placeholder="*************" name="pswsignup" required>
             
             <label for="uname"><b>Create Username</b></label>
-            <input bind:this={signupUsernameInput} type="text" placeholder="sick_username" name="unamesignup" required>
+            <input bind:this={signupUsernameInput} type="text" placeholder="sick_username" name="unamesignup">
 
             <span class="sign-up-space"></span>
 
@@ -96,7 +94,6 @@
             <button class="btn" on:click={loginWithGoogle}>
                 <img class="btn-ico" src="img/icons/google-icon.svg" alt="Sign in with Google"> Sign in with Google
             </button>
-        </form>
     </div>
 </main>
 
