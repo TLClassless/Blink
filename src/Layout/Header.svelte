@@ -28,6 +28,7 @@
         top: 0;
         width: 100%;
         background-color: #151926;
+        z-index: 10;
     }
 
     .header-content {

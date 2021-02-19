@@ -26,7 +26,7 @@
 
 <main>
     <!-- login -->
-	<span class="login">
+	<span class="login" class:clicked={!clicked}>
 
         <label for="email"><b>Email</b></label>
         <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="email" required>
@@ -52,7 +52,7 @@
 	</span>
 
     <!-- signup -->
-    <div class="login signup" class:clicked={clicked}> 
+    <div class="login" class:clicked={clicked}> 
         <label for="email"><b>Email</b></label>
         <input bind:this={emailInput} type="text" placeholder="enter@youremail.here" name="email" required>
 
@@ -121,4 +121,10 @@
     .clicked {
         display: none;
     }
+/* 
+    .signup {
+        position: fixed;
+        background-color: #151926;
+        bottom: 0;
+    } */
 </style>
