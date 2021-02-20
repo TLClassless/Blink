@@ -1,16 +1,8 @@
 <script>
 	import Header from "./Layout/Header.svelte";
 	import Nav from "./Layout/Nav.svelte";
-	import Userpost from "./Components/Blocks/User-Post.svelte";
 	import Login from "./Components/Function/Login.svelte";
-	
-	// API fetch
-	import { onMount } from 'svelte'; 
-	let posts = [];
-	onMount(async () => {
-		const res = await fetch(`api/posts.json`);
-		posts = await res.json();
-	});
+	import Feed from "./Pages/Feed.svelte";
 
 	//Login/User Func
 	import {userstate} from './js/store.js';
@@ -24,22 +16,8 @@
 	/>
 	{console.log(userstate)}
 	{#if $userstate == true}
-	<span class="posts">
-	{#each posts as post}
-		<Userpost
-		Profile={post.pic} 
-		Username={post.name}
-		Description={post.desc}
-		Game={post.game}
-		Lang={post.lang}
-		Color={post.color}
-		Gradient={post.gradient}
-		Upvotes={post.upvotes}
-		Video={post.videoid}
-		/>
-	{/each}
-</span>
-	<span class="navbar"></span>
+	<Feed />
+	<div class="navbar"></div>
 	<Nav />
 	{:else if $userstate == false}
 	<Login></Login>
@@ -70,14 +48,6 @@
 
 	main {
 		width: 100%;
-	}
-
-	.posts {
-		display: flex;
-		flex-direction: column;
-		max-width: 400px;
-		margin-top: 3.5rem;
-		margin-bottom: 3.5rem;
 	}
 
 	.navbar {
