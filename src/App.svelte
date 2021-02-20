@@ -3,6 +3,7 @@
 	import Nav from "./Layout/Nav.svelte";
 	import Login from "./Components/Function/Login.svelte";
 	import Feed from "./Pages/Feed.svelte";
+	import Profile from "./Pages/Profile.svelte";
 
 	//Login/User Func
 	import {userstate} from './js/store.js';
@@ -16,7 +17,7 @@
 	/>
 	{console.log(userstate)}
 	{#if $userstate == true}
-	<Feed />
+	<Profile />
 	<div class="navbar"></div>
 	<Nav />
 	{:else if $userstate == false}
