@@ -1,16 +1,18 @@
 <script>
-    let following = "false";
+    let followingUser = "false";
+    let username = "TLClassless";
     import Feed from "./Feed.svelte";
 </script>
 
-<main>
+<main class="profile">
     <div class="profile-mast">
-        <img class="profile-picture" src="" alt="" />
-        <h1 class="username">/Username</h1>
+        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img class="profile-picture" src="img/users/TLClassless.jpg" alt="profile-picture" />
+        <h1 class="username">/{username}</h1>
     </div>
     
     <div class="profile-description-container">
-        <p class="profile-description-text"></p>
+        <p class="profile-description-text">Lorem ipsum solar dolomet</p>
         <span class="profile-description-information">
             <p class="profile-description-location">Location</p>
             <a href="/" class="profile-description-url">http://twitch.tv/username/</a>
@@ -32,18 +34,18 @@
     </div>
     
     <div class="profile-games">
-        <img class="profile-games-img" src="" alt=""/>
-        <img class="profile-games-img" src="" alt=""/>
-        <img class="profile-games-img" src="" alt=""/>
-        <img class="profile-games-img" src="" alt=""/>
-        <img class="profile-games-img" src="" alt=""/>
+        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
+        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
+        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
+        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
+        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
     </div>
 
     <div class="profile-buttons">
-        {#if following == true}
-        <button class="Follow">Follow User</button>
-        {:else}
+        {#if followingUser === true}
         <button class="Follow">Unfollow User</button>
+        {:else}
+        <button class="Follow">Follow User</button>
         {/if}
         <button class="Report">Report</button>
     </div>
@@ -54,5 +56,95 @@
 </main>
 
 <style>
+    .profile {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
 
+    .profile-mast {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;      
+    }
+
+    .profile-picture {
+        border-radius: 50%;
+        height: 4rem;
+        border: 0.2rem;
+        background-color: var(--neon-trees-1);
+        border-color: var(--neon-trees-1);
+        border-style: solid;
+        cursor: pointer;
+    }
+
+    .username {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        background-color: var(--neon-trees-1);
+        background-image: linear-gradient(45deg, var(--neon-trees-1), var(--neon-trees-2));
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+
+    .profile-description-information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile-description-location{
+        margin: 0;
+    }
+
+    .profile-games {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-games-img {
+        border-radius: 50%;
+        height: 3rem;
+        border: 0.1rem;
+        background-color: var(--neon-trees-1);
+        border-color: var(--neon-trees-1);
+        border-style: solid;
+        cursor: pointer;
+    }
+
+    .profile-buttons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Follow {
+        width: 80%;
+        margin: 0.2rem;
+        margin-left: 0;
+        background-color: #0E111A;
+        border-color: #0E111A;
+        color: #fff;
+    }
+
+    .Report {
+        width: 20%;
+        margin: 0.2rem;
+        margin-right: 0;
+        background-color: #0E111A;
+        border-color: #0E111A;
+        color: #fff;
+    }
 </style>
