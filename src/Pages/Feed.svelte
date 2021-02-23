@@ -30,8 +30,6 @@ onMount(async () => {
     .posts {
 		display: flex;
 		flex-direction: column;
-		max-width: 400px;
-		margin-top: 3.5rem;
 		margin-bottom: 3.5rem;
 	}
 </style>

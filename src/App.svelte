@@ -15,9 +15,10 @@
 	<Header 
 		userIcon="img/users/TLClassless.jpg"
 	/>
-	{console.log(userstate)}
 	{#if $userstate == true}
-	<Profile />
+	<section class="content">
+		<Profile />
+	</section>
 	<div class="navbar"></div>
 	<Nav />
 	{:else if $userstate == false}
@@ -56,5 +57,12 @@
 		position:absolute;
 		height: 3.5rem;
 		bottom: 0;
+	}
+
+	.content {
+		max-width: 640px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 2rem; 
 	}
 </style>

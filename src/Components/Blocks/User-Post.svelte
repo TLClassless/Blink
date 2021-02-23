@@ -86,7 +86,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 1.4rem;
     }
 
     .indentity {
@@ -124,7 +123,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 12.5rem;
         object-fit: fill;
         margin: 0.8rem 0;
     }
@@ -140,7 +138,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 1.4rem;
     }
 
     .left {
@@ -173,7 +170,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-height: 3rem;
-        padding: 0 1.6rem;
         margin-bottom: 2rem;
     }
 

@@ -56,11 +56,6 @@
 </main>
 
 <style>
-    .profile {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 2rem;
-    }
 
     .profile-mast {
         margin-top: 2rem;
@@ -82,6 +77,7 @@
     }
 
     .username {
+        font-size: 2rem;
         margin: 0;
         text-transform: uppercase;
         font-family: 'Rubik', sans-serif;
@@ -157,4 +153,10 @@
         background-color: #1b2136;
         border-color: #1b2136;
     }
+
+    @media (min-width: 640px) {
+		.username {
+            font-size: 3.5rem;
+		}
+	}
 </style>
