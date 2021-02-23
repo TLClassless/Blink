@@ -19,8 +19,8 @@
     <div class="dropdown-content" class:clicked={clicked} on:click={() => clicked = !clicked}>
         <a href="/">View Profile</a>
         <a href="/">Settings</a>
-        <p id="hello" on:click={newAccountApi}>API Test</p>
-        <p id="upload" on:click={videoUpload}>Test Upload</p>
+        <!-- <p id="hello" on:click={newAccountApi}>API Test</p>
+        <p id="upload" on:click={videoUpload}>Test Upload</p> -->
         <p id="logout" on:click={logout}>Log Out</p>
     </div>
 </div>

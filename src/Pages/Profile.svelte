@@ -134,8 +134,8 @@
         width: 80%;
         margin: 0.2rem;
         margin-left: 0;
-        background-color: #0E111A;
-        border-color: #0E111A;
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
         color: #fff;
     }
 
@@ -143,8 +143,18 @@
         width: 20%;
         margin: 0.2rem;
         margin-right: 0;
-        background-color: #0E111A;
-        border-color: #0E111A;
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
         color: #fff;
+    }
+
+    .Follow:active {
+        background-color: #1b2136;
+        border-color: #1b2136;
+    }
+
+    .Report:active {
+        background-color: #1b2136;
+        border-color: #1b2136;
     }
 </style>
