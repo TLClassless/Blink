@@ -5,15 +5,34 @@
 
     import {userstate} from '../js/store.js';
     import Dropdown from "../Components/Function/Dropdown-Menu.svelte";
+
+    export let home = "img/icons/home-active.svg";
+    export let search = "img/icons/zoom-inactive.svg";
+    export let activity = "img/icons/heart-inactive.svg";
+    export let cog = "img/icons/cog-inactive.svg";
+    export let media = "img/icons/media-active.svg";
 </script>
 
 <main class="header">
     <div class="header-content">
-        <a href="/"><img src={icon} alt="icon" class="icon" /></a>
+        <a href="/"><img src={icon} alt="icon" class="user-icon" /></a>
         {#if $userstate == true}
-        <Dropdown 
+        <div class="header-buttons">
+            <span id="upload" class="icon"><img src={media} alt="upload"></span>
+            <span class="divider" />
+            <img id="home" src={home} alt="home" class="icon">
+            <span class="divider" />
+            <img src={search} alt="search" class="icon">
+            <span class="divider" />
+            <img src={activity} alt="activity" class="icon">
+            <span class="divider" />
+            <img src={cog} alt="settings" class="icon">
+            <span class="divider" />
+            <Dropdown 
             profilePicture = {userIcon}
         />
+        </div>
+
         {:else}
         <img src={login} alt="user" class="user"/>
         {/if}
@@ -39,8 +58,20 @@
         padding: 0.5rem 1.5rem;
     }
 
-    .icon {
+    .header-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .user-icon {
         height: 1.5rem;
+    }
+
+    .icon {
+        display: none;
+        height: 2rem;
     }
 
     .user {
@@ -51,4 +82,28 @@
         border-color: #fff;
         border-style: solid;
     }
+
+    #upload {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        background-color: var(--neon-trees-1);
+    }
+
+    .divider {
+        width: 0.5rem;
+    }
+
+    @media (min-width: 640px) {
+        #upload {
+            display: flex;
+        }
+
+        .icon {
+            display: flex;
+        }
+	}
 </style>

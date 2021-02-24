@@ -29,7 +29,7 @@
     /* Dropdown Button */
     .dropbtn {
         border-radius: 50%;
-        height: 1.8rem;
+        height: 2rem;
         border: 0.1rem;
         background-color: var(--neon-trees-1);
         border-color: var(--neon-trees-1);

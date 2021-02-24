@@ -79,4 +79,10 @@
     #home {
         height: 1.8rem;
     }
+
+    @media (min-width: 640px) {
+        .header {
+            display: none;
+        }
+	}
 </style>

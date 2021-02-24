@@ -124,6 +124,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        margin-bottom: 1rem;
     }
 
     .Follow {
@@ -158,5 +159,13 @@
 		.username {
             font-size: 3.5rem;
 		}
+
+        .profile-picture {
+            height: 6rem;
+        }
+
+        .profile-games-img {
+            height: 4rem;
+        }
 	}
 </style>

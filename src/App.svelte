@@ -63,6 +63,6 @@
 		max-width: 640px;
 		margin-left: 1rem;
 		margin-right: 1rem;
-		margin-top: 2rem; 
+		margin-top: 3.5rem; 
 	}
 </style>
