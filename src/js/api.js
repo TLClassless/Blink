@@ -1,6 +1,6 @@
 import { auth } from "./firebase.js";
 
-var username = "TLC";
+export var username = "";
 
 export var apiUrl = "http://localhost:5002/blink-31c54/us-central1/app/api/";
 
@@ -17,7 +17,7 @@ export async function newAccountApi() {
     };
     req.open("GET", apiUrl + "user-auth", true);
     req.setRequestHeader("Authorization", "Bearer " + token);
-    req.setRequestHeader("userdata", username);
+    req.setRequestHeader("username", username);
     req.send();
   });
 }

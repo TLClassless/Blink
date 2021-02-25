@@ -1,5 +1,7 @@
 <script>
     import { auth, provider } from '../../js/firebase.js';
+    import { username } from '../../js/api.js';
+    import { newAccountApi } from '../../js/api.js';
 
     let clicked = true;
 
@@ -46,6 +48,11 @@
         })
     }
 
+    function createUsername(){
+        let username = signupUsernameInput.value;
+        newAccountApi(username);
+    }
+
 </script>
 
 <main>
@@ -81,11 +88,11 @@
             <input bind:this={signupPasswordInput} type="password" placeholder="*************" name="pswsignup" required>
             
             <label for="uname"><b>Create Username</b></label>
-            <input bind:this={signupUsernameInput} type="text" placeholder="sick_username" name="unamesignup">
+            <input bind:this={signupUsernameInput} type="text" placeholder="sick_username" name="unamesignup" required>
 
             <span class="sign-up-space"></span>
 
-            <input type="submit" value="Sign Up" class="btn" on:click={signUpWithEmail}>
+            <input type="submit" value="Sign Up" class="btn" on:click={signUpWithEmail, createUsername}>
 
             <p>Alternatively</p>
             <button class="btn" on:click={() => clicked = !clicked}>
