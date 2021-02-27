@@ -4,6 +4,7 @@
 	import Login from "./Components/Function/Login.svelte";
 	import Feed from "./Pages/Feed.svelte";
 	import Profile from "./Pages/Profile.svelte";
+	import Interactions from "./Pages/Interactions.svelte";
 
 	//Login/User Func
 	import {userstate} from './js/store.js';
@@ -17,7 +18,7 @@
 	/>
 	{#if $userstate == true}
 	<section class="content">
-		<Profile />
+		<Interactions />
 	</section>
 	<div class="navbar"></div>
 	<Nav />
