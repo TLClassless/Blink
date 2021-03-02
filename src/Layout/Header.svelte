@@ -5,10 +5,10 @@
 
     import {userstate} from '../js/store.js';
     import Dropdown from "../Components/Function/Dropdown-Menu.svelte";
+    import InteractionDropdown from "../Components/Function/Dropdown-Menu-Interactions.svelte";
 
     export let home = "img/icons/home-active.svg";
     export let search = "img/icons/zoom-inactive.svg";
-    export let activity = "img/icons/heart-inactive.svg";
     export let cog = "img/icons/cog-inactive.svg";
     export let media = "img/icons/media-active.svg";
 </script>
@@ -24,7 +24,7 @@
             <span class="divider" />
             <img src={search} alt="search" class="icon">
             <span class="divider" />
-            <img src={activity} alt="activity" class="icon">
+            <span class="icon"><InteractionDropdown /></span>
             <span class="divider" />
             <img src={cog} alt="settings" class="icon">
             <span class="divider" />
