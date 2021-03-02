@@ -53,7 +53,7 @@
     </span>
 
     <span class="description">
-        <p class="description-txt"><b><i>{Username}</i></b> {Description}</p>
+        <p class="description-txt"><b><i>{Username}</i> </b>{Description}</p>
     </span>
 </div>
 
@@ -169,12 +169,15 @@
         flex-direction: row;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-height: 3rem;
         margin-bottom: 2rem;
     }
 
     .description-txt {
-        margin: 0.5rem 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        max-height: 3rem;
     }
 
     .neon-trees {
@@ -191,8 +194,6 @@
     .neon-trees-grad {
         background-image: linear-gradient(45deg, var(--neon-trees-1), var(--neon-trees-2));
     }
-
-
 
     .sunshine-girl {
         display: flex;

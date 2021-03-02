@@ -18,7 +18,7 @@
 	/>
 	{#if $userstate == true}
 	<section class="content">
-		<Interactions />
+		<Profile />
 	</section>
 	<div class="navbar"></div>
 	<Nav />
