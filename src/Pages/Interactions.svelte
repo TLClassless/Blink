@@ -3,59 +3,93 @@
     let commented = "commented:";
     let liked = "liked your post!";
     let comment = "This is a sample comment!";
-
+    let thumbnail = "img/placeholder/thumbnail.jpeg";
     
 </script>
 
 <main>
     <div class="notification">
-        <img src="img/games/phasmophobia.png" class="content-thumbnail" alt="thumbnail" />
-        <span class="interaction">
-            <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
-            <p class="interaction-type">{comment}</p>
+        <span class="interaction-span">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="img/users/{username}.jpg" alt="profile-picture" class="profile-pic" />
+            <span class="interaction">
+                <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {liked}</h3></span>
+                <p class="interaction-type"></p>
+            </span>
         </span>
+        <img src="{thumbnail}" class="content-thumbnail" alt="thumbnail" />
     </div>
+
     <div class="notification">
-        <img src="img/games/phasmophobia.png" class="content-thumbnail" alt="thumbnail" />
-        <span class="interaction">
-            <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
-            <p class="interaction-type">{comment}</p>
+        <span class="interaction-span">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="img/users/{username}.jpg" alt="profile-picture" class="profile-pic" />
+            <span class="interaction">
+                <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {liked}</h3></span>
+                <p class="interaction-type"></p>
+            </span>
         </span>
+        <img src="{thumbnail}" class="content-thumbnail" alt="thumbnail" />
     </div>
+
     <div class="notification">
-        <img src="img/games/phasmophobia.png" class="content-thumbnail" alt="thumbnail" />
-        <span class="interaction">
-            <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
-            <p class="interaction-type">{comment}</p>
+        <span class="interaction-span">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="img/users/{username}.jpg" alt="profile-picture" class="profile-pic" />
+            <span class="interaction">
+                <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {liked}</h3></span>
+                <p class="interaction-type"></p>
+            </span>
         </span>
+        <img src="{thumbnail}" class="content-thumbnail" alt="thumbnail" />
     </div>
+
     <div class="notification">
-        <img src="img/games/phasmophobia.png" class="content-thumbnail" alt="thumbnail" />
-        <span class="interaction">
-            <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
-            <p class="interaction-type">{comment}</p>
+        <span class="interaction-span">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="img/users/{username}.jpg" alt="profile-picture" class="profile-pic" />
+            <span class="interaction">
+                <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
+                <p class="interaction-type">{comment}</p>
+            </span>
         </span>
+        <img src="{thumbnail}" class="content-thumbnail" alt="thumbnail" />
     </div>
+
     <div class="notification">
-        <img src="img/games/phasmophobia.png" class="content-thumbnail" alt="thumbnail" />
-        <span class="interaction">
-            <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
-            <p class="interaction-type">{comment}</p>
+        <span class="interaction-span">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="img/users/{username}.jpg" alt="profile-picture" class="profile-pic" />
+            <span class="interaction">
+                <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {liked}</h3></span>
+                <p class="interaction-type"></p>
+            </span>
         </span>
+        <img src="{thumbnail}" class="content-thumbnail" alt="thumbnail" />
     </div>
+
     <div class="notification">
-        <img src="img/games/phasmophobia.png" class="content-thumbnail" alt="thumbnail" />
-        <span class="interaction">
-            <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
-            <p class="interaction-type">{comment}</p>
+        <span class="interaction-span">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="img/users/{username}.jpg" alt="profile-picture" class="profile-pic" />
+            <span class="interaction">
+                <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {liked}</h3></span>
+                <p class="interaction-type"></p>
+            </span>
         </span>
+        <img src="{thumbnail}" class="content-thumbnail" alt="thumbnail" />
     </div>
+
     <div class="notification">
-        <img src="img/games/phasmophobia.png" class="content-thumbnail" alt="thumbnail" />
-        <span class="interaction">
-            <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {commented}</h3></span>
-            <p class="interaction-type">{comment}</p>
+        <span class="interaction-span">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="img/users/{username}.jpg" alt="profile-picture" class="profile-pic" />
+            <span class="interaction">
+                <span class="interaction-indentity"><h3 class="interaction-type" id="color">/{username}</h3><span class="divider"></span><h3 class="interaction-type"> {liked}</h3></span>
+                <p class="interaction-type"></p>
+            </span>
         </span>
+        <img src="{thumbnail}" class="content-thumbnail" alt="thumbnail" />
     </div>
 </main>
 
@@ -70,24 +104,22 @@
         align-items: center;
         justify-content: space-between;
         margin: 1rem 0;
+        width: 100%;
     }
 
     .content-thumbnail {
         display: flex;
-        height: 2.5rem;
-        overflow: hidden;
-        margin-right: 1rem;
+        height: 2rem;
     }
 
     .interaction {
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
 
     .interaction-type {
         margin: 0;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .interaction-indentity {
@@ -108,4 +140,23 @@
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
     }
+
+    .profile-pic {
+        height: 2rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        border: 0.1rem;
+        border-style: solid;
+        border-color: var(--neon-trees-1);
+    }
+
+    .interaction-span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* @media (min-width: 640px) {
+        
+	} */
 </style>
