@@ -18,8 +18,6 @@
         <a href="/"><img src={icon} alt="icon" class="user-icon" /></a>
         {#if $userstate == true}
         <div class="header-buttons">
-            <span id="upload" class="icon"><img src={media} alt="upload"></span>
-            <span class="divider" />
             <img id="home" src={home} alt="home" class="icon">
             <span class="divider" />
             <img src={search} alt="search" class="icon">
@@ -27,6 +25,8 @@
             <span class="icon"><InteractionDropdown /></span>
             <span class="divider" />
             <img src={cog} alt="settings" class="icon">
+            <span class="divider" />
+            <span id="upload" class="icon"><img src={media} alt="upload"></span>
             <span class="divider" />
             <Dropdown 
             profilePicture = {userIcon}
