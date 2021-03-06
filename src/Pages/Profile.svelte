@@ -1,6 +1,14 @@
 <script>
     let followingUser = "false";
     let username = "TLClassless";
+    let url = "http://twitch.tv/username/";
+    let location = "Liverpool";
+    let description = "This is a the description of the user " + username + " enjoy the profile!";
+
+    let posts = 99;
+    let followers = 999;
+    let following = 999;
+
     import Feed from "./Feed.svelte";
 </script>
 
@@ -12,33 +20,25 @@
     </div>
     
     <div class="profile-description-container">
-        <p class="profile-description-text">Lorem ipsum solar dolomet</p>
+        <p class="profile-description-text">{description}</p>
         <span class="profile-description-information">
-            <p class="profile-description-location">Location</p>
-            <a href="/" class="profile-description-url">http://twitch.tv/username/</a>
+            <p class="profile-description-location">{location}</p>
+            <a href="/" class="profile-description-url">{url}</a>
         </span>
     
     <div class="profile-stats">
         <span class="profile-stats-posts">
-            <p class="profile-stats-number"></p>
-            <p class="profile-stats-title"></p>
+            <p class="profile-stats-number">{posts}</p>
+            <p class="profile-stats-title">Posts</p>
         </span>
-        <span class="profile-stats-followers">
-            <p class="profile-stats-number"></p>
-            <p class="profile-stats-title"></p>
+        <span class="profile-stats-posts">
+            <p class="profile-stats-number">{followers}</p>
+            <p class="profile-stats-title">Followers</p>
         </span>
-        <span class="profile-stats-following">
-            <p class="profile-stats-number"></p>
-            <p class="profile-stats-title"></p>
+        <span class="profile-stats-posts">
+            <p class="profile-stats-number">{following}</p>
+            <p class="profile-stats-title">Following</p>
         </span>
-    </div>
-    
-    <div class="profile-games">
-        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
-        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
-        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
-        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
-        <img class="profile-games-img" src="img/games/overwatch.png" alt="placeholder"/>
     </div>
 
     <div class="profile-buttons">
@@ -104,20 +104,43 @@
         margin: 0;
     }
 
-    .profile-games {
+    .profile-stats {
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        margin-bottom: 1.5rem;
     }
 
-    .profile-games-img {
-        border-radius: 50%;
-        height: 3rem;
-        border: 0.1rem;
+    .profile-stats-posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .profile-stats-posts p {
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+    }
+
+    .profile-stats-title {
+        font-size: 1rem;
+    }
+
+    .profile-stats-number {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-style: italic;
         background-color: var(--neon-trees-1);
-        border-color: var(--neon-trees-1);
-        border-style: solid;
-        cursor: pointer;
+        background-image: linear-gradient(45deg, var(--neon-trees-1), var(--neon-trees-2));
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
     }
 
     .profile-buttons {
@@ -164,8 +187,5 @@
             height: 6rem;
         }
 
-        .profile-games-img {
-            height: 4rem;
-        }
 	}
 </style>
