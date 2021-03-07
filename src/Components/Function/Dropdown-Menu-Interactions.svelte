@@ -42,5 +42,4 @@
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
     .clicked {display:block;} 
 
-
 </style>

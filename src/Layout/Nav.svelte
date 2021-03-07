@@ -8,6 +8,8 @@
     import {apiUrl} from "../js/api.js";
 
     let files;
+
+    import { Router, Link, Route } from "svelte-routing";
 </script>
 
 <!-- <section class="upload">
@@ -23,13 +25,13 @@
 </section> -->
 
 <main class="header">
-    <div class="header-content">
-        <img id="home" src={home} alt="home" class="icon">
-        <img src={search} alt="search" class="icon">
-        <span id="upload" class="icon"><img src={media} alt="upload"></span>
-        <img src={activity} alt="activity" class="icon">
-        <img src={cog} alt="settings" class="icon">
-    </div>
+    <nav class="header-content">
+        <Link to="/"><img id="home" src={home} alt="home" class="icon"></Link>
+        <Link to="search"><img src={search} alt="search" class="icon"></Link>
+        <Link to="upload"><span id="upload" class="icon"><img src={media} alt="upload"></span></Link>
+        <Link to="interactions"><img src={activity} alt="activity" class="icon"></Link>
+        <Link to="settings"><img src={cog} alt="settings" class="icon"></Link>
+    </nav>
 </main>
 
 <style>

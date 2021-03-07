@@ -30,7 +30,7 @@
             <span class="divider" />
             <Dropdown 
             profilePicture = {userIcon}
-        />
+            />
         </div>
 
         {:else}

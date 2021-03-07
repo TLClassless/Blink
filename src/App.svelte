@@ -5,11 +5,17 @@
 	import Feed from "./Pages/Feed.svelte";
 	import Profile from "./Pages/Profile.svelte";
 	import Interactions from "./Pages/Interactions.svelte";
+	import Settings from "./Pages/Settings.svelte";
+	import Upload from "./Pages/Upload.svelte";
 
 	//Login/User Func
 	import {userstate} from './js/store.js';
 	import auth from './js/userstate.js';
+	
+	//Routing
+	import { Router, Route, Link } from "svelte-routing";
 
+	export let url = "";
 </script>
 
 <main>
@@ -17,11 +23,20 @@
 		userIcon="img/users/TLClassless.jpg"
 	/>
 	{#if $userstate == true}
+	<Router url="{url}">
 	<section class="content">
-		<Profile />
+		<Route path="/"><Feed /></Route>
+		<Route path="interactions"><Interactions /></Route>
+		<Route path="profile"><Profile /></Route>
+		<Route path="settings"><Settings /></Route>
+		<Route path="upload"><Upload /></Route>
 	</section>
 	<div class="navbar"></div>
-	<Nav />
+	
+		<Nav />
+
+	</Router>
+	
 	{:else if $userstate == false}
 	<Login></Login>
 	{:else}
