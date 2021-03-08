@@ -9,7 +9,7 @@
 
     let files;
 
-    import { Router, Link, Route } from "svelte-routing";
+    import { Link } from "svelte-routing";
 </script>
 
 <!-- <section class="upload">

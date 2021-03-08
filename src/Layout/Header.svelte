@@ -7,27 +7,36 @@
     import Dropdown from "../Components/Function/Dropdown-Menu.svelte";
     import InteractionDropdown from "../Components/Function/Dropdown-Menu-Interactions.svelte";
 
-    export let home = "img/icons/home-active.svg";
     export let search = "img/icons/zoom-inactive.svg";
     export let cog = "img/icons/cog-inactive.svg";
     export let media = "img/icons/media-active.svg";
+
+    import { link } from "svelte-routing";
 </script>
 
 <main class="header">
     <div class="header-content">
-        <a href="/"><img src={icon} alt="icon" class="user-icon" /></a>
+        <img src={icon} alt="icon" class="user-icon" />
         {#if $userstate == true}
         <div class="header-buttons">
-            <img id="home" src={home} alt="home" class="icon">
-            <span class="divider" />
+            <!-- <img id="home" src={home} alt="home" class="icon"> -->
+            <!-- <span class="divider" /> -->
             <img src={search} alt="search" class="icon">
+
             <span class="divider" />
+            
             <span class="icon"><InteractionDropdown /></span>
+            
             <span class="divider" />
-            <img src={cog} alt="settings" class="icon">
+
+            <a href="/settings"><img src={cog} alt="settings" class="icon"></a>
+            
             <span class="divider" />
-            <span id="upload" class="icon"><img src={media} alt="upload"></span>
+            
+            <a href="/upload"><span id="upload" class="icon"><img src={media} alt="upload"></span></a>
+            
             <span class="divider" />
+            
             <Dropdown 
             profilePicture = {userIcon}
             />
