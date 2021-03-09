@@ -1,9 +1,7 @@
 <script>
     let clicked = false;
     export let profilePicture;
-    import { auth } from "../../js/firebase.js"
-    import { newAccountApi } from '../../js/api.js';
-    import { videoUpload } from '../../js/upload.js';
+    import { auth } from "../../js/firebase.js";
 
     const logout = () => {
         auth.signOut().then(() => {
@@ -11,18 +9,16 @@
         })
     }
 
-
+    import { link } from "svelte-routing";
 </script>
 
 <div class="dropdown">
     <img src={profilePicture} alt="profilePic" class="dropbtn" on:click={() => clicked = !clicked} />
-    <div class="dropdown-content" class:clicked={clicked} on:click={() => clicked = !clicked}>
-        <a href="/">View Profile</a>
-        <a href="/">Settings</a>
-        <!-- <p id="hello" on:click={newAccountApi}>API Test</p>
-        <p id="upload" on:click={videoUpload}>Test Upload</p> -->
+    <nav class="dropdown-content" class:clicked={clicked} on:click={() => clicked = !clicked}>
+        <a href="profile" use:link><p>View Profile</p></a>
+        <a href="settings" use:link>Settings</a>
         <p id="logout" on:click={logout}>Log Out</p>
-    </div>
+    </nav>
 </div>
 
 <style>

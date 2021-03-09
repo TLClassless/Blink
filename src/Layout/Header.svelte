@@ -3,7 +3,7 @@
     let login = "img/icons/user-placeholders.svg";
     let icon = "img/icons/blink-ico.svg";
 
-    import {userstate} from '../js/store.js';
+    import { userstate } from '../js/store.js';
     import Dropdown from "../Components/Function/Dropdown-Menu.svelte";
     import InteractionDropdown from "../Components/Function/Dropdown-Menu-Interactions.svelte";
 
@@ -11,17 +11,17 @@
     export let cog = "img/icons/cog-inactive.svg";
     export let media = "img/icons/media-active.svg";
 
-    import { Link } from "svelte-routing";
+    import { link } from "svelte-routing";
 </script>
 
 <main class="header">
     <div class="header-content">
-        <a href="/"><img src={icon} alt="icon" class="user-icon" /></a>
+        <a href="/" use:link><img src={icon} alt="icon" class="user-icon" /></a>
         {#if $userstate == true}
         <div class="header-buttons">
             <!-- <img id="home" src={home} alt="home" class="icon"> -->
             <!-- <span class="divider" /> -->
-            <a href="search"><img src={search} alt="search" class="icon"></a>
+            <a href="search" use:link><img src={search} alt="search" class="icon"></a>
 
             <span class="divider" />
             
@@ -29,11 +29,11 @@
             
             <span class="divider" />
 
-            <a href="settings"><img src={cog} alt="settings" class="icon"></a>
+            <a href="settings" use:link><img src={cog} alt="settings" class="icon"></a>
             
             <span class="divider" />
             
-            <a href="upload"><span id="upload" class="icon"><img src={media} alt="upload"></span></a>
+            <a href="upload" use:link><span id="upload" class="icon"><img src={media} alt="upload"></span></a>
             
             <span class="divider" />
             
