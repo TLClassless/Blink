@@ -15,7 +15,7 @@
 <div class="dropdown">
     <img src={profilePicture} alt="profilePic" class="dropbtn" on:click={() => clicked = !clicked} />
     <nav class="dropdown-content" class:clicked={clicked} on:click={() => clicked = !clicked}>
-        <a href="profile" use:link><p>View Profile</p></a>
+        <a id="profile-link" href="profile" use:link><p>View Profile</p></a>
         <a href="settings" use:link>Settings</a>
         <p id="logout" on:click={logout}>Log Out</p>
     </nav>
@@ -56,6 +56,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    margin: 0;
     }
 
     /* Change color of dropdown links on hover */
@@ -69,5 +70,9 @@
         color: #FF0000;
         cursor: pointer;
         margin: 0;
+    }
+
+    #profile-link {
+        padding: 0;
     }
 </style>
