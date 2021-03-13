@@ -7,6 +7,7 @@
 	import Interactions from "./Pages/Interactions.svelte";
 	import Settings from "./Pages/Settings.svelte";
 	import Upload from "./Pages/Upload.svelte";
+	import Search from "./Pages/Search.svelte";
 
 	//Login/User Func
 	import {userstate} from './js/store.js';
@@ -30,6 +31,7 @@
 		<Route path="profile"><Profile /></Route>
 		<Route path="settings"><Settings /></Route>
 		<Route path="upload"><Upload /></Route>
+		<Route path="search"><Search /></Route>
 	</section>
 	<div class="navbar"></div>
 	
