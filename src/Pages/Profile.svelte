@@ -169,13 +169,13 @@
     }
 
     .Follow:active {
-        background-color: #1b2136;
-        border-color: #1b2136;
+        background-color: var(--light-accent);
+        border-color: var(--light-accent);
     }
 
     .Report:active {
-        background-color: #1b2136;
-        border-color: #1b2136;
+        background-color: var(--light-accent);
+        border-color: var(--light-accent);
     }
 
     @media (min-width: 640px) {
